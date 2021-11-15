@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'nevis Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('nevis Bold'), url('../fonts/nevis.woff') format('woff');
+}
+
+body{
+	margin: 0;
+	overflow: hidden;
+}
+
+div{
+	display: flex;
+	justify-content:center;
+}
+
+h2{
+	position: absolute;
+	top: 10px;
+	font-size: 3em;
+	color: white;
+	font-family: 'nevis Bold';
+}
+
+p{
+	position: absolute;
+	font-size: 1em;
+	color: white;
+	font-family: 'nevis Bold';
+}
+
+img {
+
+	height: 100vh;
+	
+}

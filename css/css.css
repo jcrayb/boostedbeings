@@ -118,31 +118,23 @@ nav a{
 	height: 500px;
 }
 
-/*Slideshow*/
+/*main images*/
 
-#sl-container{
-	width:100%;
-	margin: auto;
+#start img{
+	width: 100%;
+	z-index: 10;
 }
 
-#slideshow{
-	overflow: hidden;
+#main-img{
+	display: block;
 }
 
-#slideshow figure{
-	position:relative;
-	width: 500%;
-	margin:0;
-	left:0;	
-	animation: 15s slideshow infinite;
+#square-img{
+	display: none;
 }
 
-#slideshow img{
-	float: left;
-	width: 20%;
-}
 
-@keyframes slideshow{
+@keyframes{
 	0%{
 		left:0;
 	}
@@ -184,10 +176,13 @@ nav a{
 /*Slideshow*/
 
 #prom{
+	margin: auto;
+	position: relative;
+	top: 0;
 	text-align: center;
 	font-size: 4em;
-	color: white;
-	background: #00003c;
+	color: black;
+	
 	box-shadow: 0px 0px 10px 10px gray;
 }
 
@@ -220,6 +215,7 @@ nav a{
 	text-align:justify;
 	font-size: 1.5em;
 }
+
 @media (max-width : 925px ){
 	header{
 		height: auto;
@@ -256,5 +252,14 @@ nav a{
 	.container{
 		width:92%;
 	}
+}
+
+@media (max-width : 700px ){
+	#main-img{
+		display: none;
+	}
+	
+	#square-img{
+		display: block;
 	}
 }
